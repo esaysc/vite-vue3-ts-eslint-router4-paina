@@ -1,0 +1,204 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  /* background: linear-gradient(to right top, #65dfc9, #6cdbeb); */
+  background: linear-gradient(to right top, #f9f9f9, #fefefe);
+}
+main {
+  height: 800px;
+  /* background: linear-gradient(to right top, #65dfc9, #6cdbeb); */
+  background: linear-gradient(to right top, #65dfc9, #f2f2f2);
+
+  /* 子元素水平居中 */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.glass {
+  height: 600px;
+  background: white;
+  width: 600px;
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.7),
+    rgba(255, 255, 255, 0.3)
+  );
+  border-radius: 1rem;
+  z-index: 2;
+  margin-top: -160px;
+}
+/* 背景圈圈 */
+
+.circle1,
+.circle2,
+.circle3,
+.circle4,
+.circle5 {
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.7),
+    rgba(255, 255, 255, 0.3)
+  );
+  height: 14rem;
+  width: 14rem;
+  border-radius: 50%;
+}
+/* 登录容器 */
+.login-container {
+  width: 80%;
+  height: 615px;
+  margin: auto;
+  margin-top: 10%;
+  border-radius: 15px;
+  box-shadow: 0 10px 50px 0px rgba(59, 45, 159, 0.7);
+  background-color: rgba(76, 141, 194, 1);
+}
+.circle1 {
+  position: absolute;
+  top: 5%;
+  right: 13%;
+  z-index: 1;
+}
+.circle2 {
+  position: absolute;
+  top: 6%;
+  left: 20%;
+  z-index: 0;
+}
+.circle3 {
+  position: absolute;
+  top: 5%;
+  left: 14%;
+  height: 3rem;
+  width: 3rem;
+  z-index: 2;
+}
+.circle4 {
+  position: absolute;
+  top: 4%;
+  left: 17%;
+  height: 7rem;
+  width: 7rem;
+}
+.circle5 {
+  position: absolute;
+  bottom: 6%;
+  left: 13%;
+  z-index: 0;
+}
+.left-container {
+  height: 615px;
+  display: inline-block;
+  width: 70%;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  padding: 30px;
+  background-image: linear-gradient(
+    to bottom right,
+    rgba(76, 90, 163, 0.7),
+    rgba(166, 172, 221, 0.5)
+  );
+}
+.title {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 200;
+}
+.title span {
+  border-bottom: 3px solid rgb(237, 221, 22);
+}
+.input-container {
+  padding: 20px 0;
+}
+
+Textarea {
+  background: rgb(140, 233, 255);
+}
+
+::-webkit-input-placeholder {
+  color: rgb(199, 191, 219);
+}
+.message-container {
+  font-size: 14px;
+  transition: 0.2s;
+  color: rgb(199, 191, 219);
+  cursor: pointer;
+  /* background-color: #65dfc9; */
+}
+.message-container:hover {
+  color: #fff;
+}
+.right-container {
+  width: 145px;
+  display: inline-block;
+  vertical-align: top;
+  padding: 60px 0;
+}
+.action-container {
+  text-align: center;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 200;
+}
+.action-container span {
+  border-bottom: 3px solid rgb(237, 221, 22);
+}
+
+.action {
+  width: 4rem;
+  border: 1px solid rgb(22, 212, 237);
+  padding: 10px;
+  display: inline;
+  line-height: 20px;
+  border-radius: 20px;
+  transition: 0.2s;
+  cursor: pointer;
+}
+#btn1,
+#btn2 {
+  width: 4rem;
+  border: 1px solid rgb(22, 212, 237);
+  padding: 10px;
+  display: inline;
+  line-height: 20px;
+  border-radius: 20px;
+  transition: 0.2s;
+  cursor: pointer;
+}
+#btn2 {
+  left: 50%;
+}
+.register {
+  width: 4rem;
+  /* border: 1px solid rgb(237, 221, 22); */
+  border: 1px solid rgb(22, 212, 237);
+  padding: 10px;
+  display: inline;
+  line-height: 20px;
+  border-radius: 20px;
+  position: relative;
+  transition: 0.2s;
+  left: 100px;
+  cursor: pointer;
+}
+#btn1:hover,
+#btn2:hover,
+.action:hover {
+  background-color: rgb(67, 170, 215);
+  color: rgb(95, 76, 194);
+}
+
+.register:hover {
+  /* background-color: rgb(237, 221, 22); */
+  background-color: rgb(67, 170, 215);
+
+  color: rgb(95, 76, 194);
+}
+.card-label {
+  font-size: 10px;
+  color: rgb(82, 59, 213);
+}

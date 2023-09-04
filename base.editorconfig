@@ -1,0 +1,15 @@
+# 表示是最顶层的配置文件，发现值位true时，才会停止查找.editorconfig文件 
+root = true
+
+[*]
+# 设置编码格式
+charset = utf-8
+# 缩进风格 tab or space
+indent_style = space
+indent_size = 2
+# 设置换行符 lf cr crlf
+end_of_line = lf
+# 为true 表示使文件以一个空白行结尾
+insert_final_newline = true
+# 为true表示取出换行行首的任意空白字符
+trim_trailing_whitespace = true

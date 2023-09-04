@@ -1,0 +1,24 @@
+// less 主题 及各种样式
+.theme(
+    @primary-color: #0078fe;
+    // 白键长宽
+    @whiteW: 60px;
+    @whiteH: 360px;
+) {
+  --primary-color: @primary-color;
+}
+/* 温和 居中背景 */
+.moderate {
+  height: 64px;
+  z-index: 5;
+  .center-block();
+}
+.mauto {
+  margin: auto;
+}
+.center-block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
